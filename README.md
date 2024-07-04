@@ -25,6 +25,7 @@ The script uses the following set of characters for generating guesses:
 4. Navigate to the directory where you saved the script.
 5. Run the script using the command:
 
+![Screenshot 2024-07-04 120308](https://github.com/shayanjaviid/Password-Cracker/assets/104303445/732f27c4-ccb7-41e7-b3d4-a342d954d414)
 
 ## Example
 Enter a password: P@ssw0rd
