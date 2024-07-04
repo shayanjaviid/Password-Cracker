@@ -25,46 +25,9 @@ The script uses the following set of characters for generating guesses:
 4. Navigate to the directory where you saved the script.
 5. Run the script using the command:
 
-from random import randint
-import os
 
-u_pwd = input("Enter a password:")
-pwd = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A",
-       "B", "C", "D", "E", "H", "I", "G", "K", "L", "M",
-       "M", "N", "P", "Q", "R", "S", "T", "W", "Q", "Y",
-       "Z", "0", "!", "@", "#", "$", "%", "&"]
-
-pw = ""
-while pw != u_pwd:
-    pw = ""
-    for letter in range(len(u_pwd)):
-        guess_pwd = pwd[randint(0, len(pwd) - 1)]
-        pw = str(guess_pwd) + str(pw)
-        print(pw)
-        print("Cheyenne is Cracking Password....Please Wait!")
-        os.system("cls" if os.name == "nt" else "clear")
-print("Your Password is:", pw)
-
-
-
-from random import randint
-import os
-
-u_pwd = input("Enter a password:")
-pwd = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A',
-       'B', 'C', 'D', 'E', 'H', 'I', 'G', 'K', 'L', 'M',
-       'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'W', 'Q', 'Y',
-       'Z', '0', '!', '@', '#', '$', '%', '&']
-
-pw = ""
-while pw != u_pwd:
-    pw = ""
-    for letter in range(len(u_pwd)):
-        guess_pwd = pwd[randint(0, len(pwd) - 1)]
-        pw = str(guess_pwd) + str(pw)
-        print(pw)
-        print("Cheyenne is Cracking Password....Please Wait!")
-        os.system("cls" if os.name == 'nt' else "clear")
-print("Your Password is:", pw)
-
-
+## Example
+Enter a password: P@ssw0rd
+Cheyenne is Cracking Password....Please Wait!
+...
+Your Password is: P@ssw0rd
